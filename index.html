@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+page: LogIn Page
+date: 5/6/2020
+Author: Bhakti Madia
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Libraries link-->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+            <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"> </script>
+        
+            <!--Data Aos Animation-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+		<script>
+		AOS.init();
+		</script>
+            <!--Google Fonts-->
+            <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+        <style>
+            body{
+                width: 100%;
+                height: 100%;
+                animation-duration: 15s;
+                animation-name: example;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                animation-iteration-count: 999;
+            }
+            @keyframes example{
+                0% {background-image: url("images/bg1.png");}
+                25% {background-image: url("images/bg2.png");}
+                50% {background-image: url("images/bg3.png");}
+                75% {background-image: url("images/bg4.png");}
+                100% {background-image: url("images/bg5.png");}
+            }
+            .bg-light{
+        	background-color: #2ab1 !important;
+            }
+            .mt-5{
+                margin-top: 7rem !important;
+            }
+            .mb-3{
+                margin-bottom: 2rem !important;
+            }
+            .btn-success{
+                color: #ffffff !important;
+            }
+            .btn:not(:disabled):not(.disabled) {
+                cursor: pointer;
+                background-color: black;
+                border-color: white;
+            }
+            .btn:hover{
+                background-color: #a19ea6 !important;
+            }
+            .card-title {
+                margin-bottom: .75rem;
+                -webkit-box-shadow: -2px -16px 38px 14px rgba(224,224,224,1);
+                -moz-box-shadow: -2px -16px 38px 14px rgba(224,224,224,1);
+                box-shadow: -2px -16px 38px 14px rgba(224,224,224,1);
+            }
+            .card-body{
+                -webkit-box-shadow: -4px 28px 30px 17px rgba(224,224,224,1);
+                -moz-box-shadow: -4px 28px 30px 17px rgba(224,224,224,1);
+                box-shadow: -4px 28px 30px 17px rgba(224,224,224,1);
+                    padding: 2.25rem !important;
+                    margin-top: -0.78rem !important;
+            }
+            h1{
+                margin-top: 2.5rem;
+                font-family: 'Allura';  
+                font-size: 70px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xm-5 m-auto">
+                <div class="card mt-5 bg-light" >
+                    <div class="card-title text-center mt-3">
+                        <h1>WardrobeHeist</h1>
+                    </div>
+                    <div class="card-body">
+			<form action="LogIn.jsp" method="post">
+                            <div class="input-group mb-3">
+				<div class="input-group-prepend">
+                                    <span class="input-group-text">
+					<i class="fa fa-user fa-2x"></i>
+                                    </span>
+				</div>		
+                            <!--ENter Username-->				
+                                <input type="text" class="form-control py-4" name="uname" placeholder="Enter Username" required>
+                            </div>
+                            <div class="input-group mb-3">
+				<div class="input-group-prepend">
+                                    <span class="input-group-text">
+					<i class="fa fa-lock fa-2x"></i>
+                                    </span>
+				</div>
+							
+                            <!--Enter Password-->
+				<input type="password" class="form-control py-4" name="password" placeholder="Enter Password" required>
+                            </div>
+						
+                            <!--LogIn Button-->
+                            <button class="btn btn-success" type="submit" name="submit" >Login Now</button>
+			
+                            <!--Forget Password Link-->
+                            <p class="float-right text-white"><a href="#">Forget Password?</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
